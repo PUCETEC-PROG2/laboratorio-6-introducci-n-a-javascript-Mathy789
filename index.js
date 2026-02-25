@@ -21,8 +21,11 @@ const clientes = [
     { nombre: "María López", edad: 70, tickets: 1 },     // Mayor
     // TODO: Agrega 4 clientes más siguiendo esta estructura
     // Asegúrate de incluir: 1 menor más, 1 mayor más, y 2 adultos (18-64 años)
+    { nombre: "Mite Martin", edad: 14, tickets: 1 },
+    { nombre: "Jhon Toapanta", edad: 56, tickets: 1 },
+    { nombre: "Ana Cano", edad: 24, tickets: 1 },
+    { nombre: "Jorge Luis", edad: 50, tickets: 1 },
 ];
-
 
 // =========================================
 // PASO 2: PROCESAR CLIENTES
@@ -43,17 +46,21 @@ for (let i = 0; i < clientes.length; i++) {
     
     // TODO: Paso 2 - Calcula el precio sin descuento
     // Multiplica PRECIO_BASE por cantidadTickets
-    let precioSinDescuento = 0; // Reemplaza 0 con el cálculo correcto
+    let precioSinDescuento = PRECIO_BASE * cantidadTickets; // Reemplaza 0 con el cálculo correcto
     
     // TODO: Paso 3 - Calcula el descuento según la edad
     let descuento = 0;
-    // Si edad < 18, descuento = 0.50 (50%)
-    // Si edad >= 65, descuento = 0.30 (30%)
-    // Si no, descuento = 0 (sin descuento)
+    
+    if (edad < 18 ) {
+        descuento = 0.50
+    }
+    else if (edad >= 65) {
+        descuento = 0.30
+    }
     
     // TODO: Paso 4 - Calcula el precio con descuento
     // Resta al precioSinDescuento el monto del descuento
-    let precioConDescuento = 0; // Reemplaza 0 con el cálculo correcto
+    let precioConDescuento = precioSinDescuento - (precioSinDescuento * descuento); // Reemplaza 0 con el cálculo correcto
     
     // TODO: Paso 5 - Muestra el reporte del cliente
     console.log("Cliente: " + nombre);
