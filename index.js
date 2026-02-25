@@ -22,9 +22,9 @@ const clientes = [
     // TODO: Agrega 4 clientes más siguiendo esta estructura
     // Asegúrate de incluir: 1 menor más, 1 mayor más, y 2 adultos (18-64 años)
     { nombre: "Mite Martin", edad: 14, tickets: 1 },
-    { nombre: "Jhon Toapanta", edad: 56, tickets: 1 },
-    { nombre: "Ana Cano", edad: 24, tickets: 1 },
-    { nombre: "Jorge Luis", edad: 50, tickets: 1 },
+    { nombre: "Jhon Toapanta", edad: 45, tickets: 6},
+    { nombre: "Ana Cano", edad: 24, tickets: 12 },
+    { nombre: "Jorge Luis", edad: 65, tickets: 5 },
 ];
 
 // =========================================
